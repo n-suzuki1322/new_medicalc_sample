@@ -1,0 +1,350 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+#header {
+  width: 100%;
+  height: 64px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 99;
+  -webkit-box-shadow: 0 1px 1px #e5e506;
+          box-shadow: 0 1px 1px #e5e506;
+  background-color: skyblue;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#header .bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 14px;
+  top: 17px;
+}
+
+#header .bm-burger-bars {
+  background: white;
+}
+
+#header .bm-menu {
+  background: #000;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+#header .bm-item-list {
+  color: #b8b7ad;
+}
+
+#header .bm-item {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #d1d1d1;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+#header .bm-item:hover {
+  color: white;
+}
+
+#header .bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+#header .bm-cross {
+  background-color: #d1d1d1;
+}
+
+#header .bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+#header #clinic_name {
+  position: fixed;
+  color: white;
+  line-height: 30px;
+  top: 17px;
+  left: 80px;
+  font-size: 20px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 64px;
+  height: 720px;
+  z-index: -4;
+  background-color: #fafafa;
+}
+
+.container > .top {
+  height: 70px;
+  padding: 10px 30px 0;
+}
+
+.container > .top > ul.pankuzu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style-type: none;
+}
+
+.container > .top > ul.pankuzu-list > li:not(:last-child):after {
+  content: '\003e';
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #888888;
+}
+
+.container > .top > ul.pankuzu-list > li > a {
+  padding: 2px;
+  color: #000;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.container > .top > ul.pankuzu-list > li > a:hover {
+  color: #272222;
+}
+
+.container > .top > .button-list {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.container > .top > .button-list > button {
+  display: inline;
+  background: white;
+  color: gray;
+  border: 1px gray solid;
+  width: 100px;
+  height: 30px;
+  vertical-align: middle;
+  margin: 0;
+  border-radius: 2px;
+}
+
+.container > .top > .button-list > button:first-child {
+  background-color: gray;
+  color: white;
+}
+
+.container > .contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 80%;
+}
+
+.container > .contents .left-parts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 25px;
+  width: 23%;
+  color: gray;
+  background-color: white;
+  padding: 0 15px;
+  -webkit-box-shadow: 3px 3px 8px 2px gray;
+          box-shadow: 3px 3px 8px 2px gray;
+}
+
+.container > .contents .left-parts > .pt-info {
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: #b9b9b9 1px solid;
+}
+
+.container > .contents .left-parts > .pt-info > .edit-button {
+  background-color: white;
+  border: 1px gray solid;
+  border-radius: 3px;
+  padding: 0 1rem;
+}
+
+.container > .contents .left-parts > .pt-info-detail {
+  height: 30%;
+  border-bottom: #b9b9b9 1px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  padding-bottom: 10px;
+}
+
+.container > .contents .left-parts > .pt-info-detail > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 15px;
+}
+
+.container > .contents .left-parts > .pt-info-detail > div > p, .container > .contents .left-parts > .pt-info-detail > div div {
+  line-height: 36px;
+}
+
+.container > .contents .left-parts > .calender {
+  height: 35%;
+  border-bottom: #b9b9b9 1px solid;
+}
+
+.container > .contents .left-parts > .calender table {
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.container > .contents .left-parts > .calender table thead tr th {
+  font-size: 5px;
+}
+
+.container > .contents .left-parts > .calender table thead tr th#title {
+  font-size: 3px;
+  width: 15px;
+}
+
+.container > .contents .left-parts > .calender table #prev, .container > .contents .left-parts > .calender table #title, .container > .contents .left-parts > .calender table #next {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.container > .contents .left-parts > .calender table tbody tr td {
+  font-size: 15px;
+}
+
+.container > .contents .left-parts .se-info {
+  height: 25%;
+}
+
+.container > .contents .left-parts .se-info > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  vertical-align: center;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.container > .contents .left-parts .se-info > div > p {
+  display: inline-block;
+}
+
+.container > .contents .left-parts .se-info > button {
+  background-color: white;
+  border: 1px gray solid;
+  border-radius: 3px;
+  padding: 0 1rem;
+}
+
+.container > .contents > .main-table {
+  margin: 25px 25px 25px 0;
+  width: 77%;
+  background-color: white;
+  padding: 0 15px;
+  -webkit-box-shadow: 3px 3px 8px 2px gray;
+          box-shadow: 3px 3px 8px 2px gray;
+  position: relative;
+}
+
+.container > .contents > .main-table > table > thead {
+  border-bottom: gray 1px solid;
+}
+
+.container > .contents > .main-table > table tr > th {
+  color: gray;
+  font-size: 16px;
+  font-weight: lighter;
+  padding: 15px 10px;
+}
+
+.container > .contents > .main-table > table tr > td {
+  padding: 10px 10px;
+}
+
+.container > .contents > .main-table > table tr > td.cause {
+  padding-left: 25px;
+}
+
+.container > .contents > .main-table > table tr > td > a.detail-button {
+  color: #666565;
+  text-decoration: none;
+}
+
+.container > .contents > .main-table > div > button {
+  position: absolute;
+  bottom: 15px;
+  color: white;
+  background-color: #c5c5c5;
+  width: 96%;
+  padding: 5px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: pink;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+/*# sourceMappingURL=App.css.map */
